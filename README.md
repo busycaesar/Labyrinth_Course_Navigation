@@ -1,20 +1,22 @@
-<!-- Remove the following content when using this template for create repo for project! -->
-This repository serves as a template for all my future project repositories. It contains the common structure, configurations, and files that I use across my projects. The purpose of this repository template is to maintain consistency and standardization across my projects. By using this template, I ensure that all my repositories follow a similar structure and setup, making it easier to manage and maintain them.
-
-While this template is primarily for personal use, contributions and suggestions for improvements are always welcome. If you have ideas for enhancing the template or making it more useful, feel free to submit a pull request or open an issue.
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXS -->
-
-# Project Title
+# Labyrinth Course Robotc
 
 ## Description
 
+This project demonstrates the use of RobotC programming to autonomously navigate a robot through a labyrinth course. The robot utilizes an ultrasonic sensor to detect walls and obstacles, allowing it to move forward until a wall is sensed within a specified threshold distance. The program includes functions for moving forward, turning left, and turning right, which are sequenced to navigate the maze. The code is configured for the RVW SQUAREBOT model
+
 ## Tech Stack
 
-<img src="https://skillicons.dev/icons?i=js,ts" />
+<img src="https://skillicons.dev/icons?i=c" />
 
 ## How it looks?
+
+![Labyrinth Course](https://github.com/busycaesar/Labyrinth_Course_Robotc/assets/97539345/e61f53dc-4aab-4114-bc7a-a7b402f3bd13)
+
 ## Features
-## How to run the project?
+
+- Autonomously Navigation
+- Detect Walls and Obstacles
+
 ## Author
 
 [Dev Shah](https://github.com/busycaesar)
