@@ -14,7 +14,7 @@ This project demonstrates the use of RobotC programming to autonomously navigate
 
 ## Features
 
-- Autonomously Navigation
+- Autonomous Navigation
 - Detect Walls and Obstacles
 
 ## Author
