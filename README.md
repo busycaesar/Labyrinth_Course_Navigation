@@ -1,4 +1,4 @@
-# Labyrinth Course Robotc
+# Autonomous Labyrinth Navigation
 
 ## Description
 
