@@ -1,45 +1,79 @@
 #pragma config(StandardModel, "RVW SQUAREBOT")
-#pragma config(Sensor, S1,     sonarSensor,    sensorSONAR)
 
-// Function to move the robot forward until it detects a wall
-void moveAheadUntilWall(int time) {
-	motor[rightMotor] = 127;  // Motor on port2 is run at full (127) power forward
-	motor[leftMotor]  = 127;  // Motor on port3 is run at full (127) power forward
-	wait1Msec(time);
-	motor[rightMotor] = 0;    // Stop the right motor
-	motor[leftMotor]  = 0;    // Stop the left motor
+#define K_SPEED 127
+#define K_TURN_DISTANCE 372
+
+void moveForward(int distance){
+
+  //Clear Encoders
+  SensorValue[rightEncoder] = 0;
+  SensorValue[leftEncoder] = 0;
+
+  while(SensorValue[leftEncoder] < distance)
+  {
+
+  	if(SensorValue[touchSensor] == 1) {
+    	motor[rightMotor] = 0;
+    	motor[leftMotor] = 0;
+  	}
+
+    motor[rightMotor] = K_SPEED;
+    motor[leftMotor] = K_SPEED;
+
+   }
+
 }
 
-// Function to turn the robot left
-void turnLeft() {
-	motor[rightMotor] = 127;  // Right motor runs forward
-	motor[leftMotor]  = -127; // Left motor runs backward
-	wait1Msec(630);          // Robot runs previous code for the specified time in milliseconds
-	motor[rightMotor] = 0;    // Stop the right motor
-	motor[leftMotor]  = 0;    // Stop the left motor
+void turnLeft(){
+
+	SensorValue[rightEncoder] = 0;
+
+  while(SensorValue(rightEncoder) < K_TURN_DISTANCE)
+	{
+
+	  if(SensorValue[touchSensor] == 1) {
+    	motor[rightMotor] = 0;
+    	motor[leftMotor] = 0;
+  	}
+
+		//Turn Left
+		motor[rightMotor] = K_SPEED;
+		motor[leftMotor]  = -K_SPEED;
+	}
+
 }
 
-// Function to turn the robot right
-void turnRight() {
-	motor[rightMotor] = -127; // Right motor runs backward
-	motor[leftMotor]  = 127;  // Left motor runs forward
-	wait1Msec(630);          // Robot runs previous code for the specified time in milliseconds
-	motor[rightMotor] = 0;    // Stop the right motor
-	motor[leftMotor]  = 0;    // Stop the left motor
+void turnRight(){
+
+	SensorValue[leftEncoder] = 0;
+
+  while(SensorValue(leftEncoder) < K_TURN_DISTANCE)
+	{
+
+  	if(SensorValue[touchSensor] == 1) {
+    	motor[rightMotor] = 0;
+    	motor[leftMotor] = 0;
+  	}
+
+		//Turn Right
+		motor[rightMotor] = -K_SPEED;
+		motor[leftMotor]  = K_SPEED;
+	}
+
 }
 
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
 task main()
 {
-	wait1Msec(1000); // Robot waits for 1000 milliseconds before executing program
+	wait1Msec(1000);
 
-	moveAheadUntilWall(9000);
+	moveForward(5300);
 	turnLeft();
-	moveAheadUntilWall(5500);
+	moveForward(3400);
 	turnLeft();
-	moveAheadUntilWall(9000);
+	moveForward(5300);
 	turnRight();
-	moveAheadUntilWall(4000);
+	moveForward(1500);
 
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
