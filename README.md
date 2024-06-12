@@ -10,16 +10,11 @@ This project demonstrates the use of `RobotC programming` to autonomously naviga
 
 ## Tech Stack
 
-<img src="https://skillicons.dev/icons?i=c" />
+![C](https://skillicons.dev/icons?i=c)
 
-## How it looks?
+## Index
 
-![Labyrinth Course](https://github.com/busycaesar/Labyrinth_Course_Robotc/assets/97539345/e61f53dc-4aab-4114-bc7a-a7b402f3bd13)
-
-## Features
-
-- Autonomous Navigation
-- Detect Walls and Obstacles
+[Labyrinth Course Navigation]()
 
 ## Author
 
