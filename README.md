@@ -10,8 +10,9 @@ This repository showcases a collection of projects developed while learning **RO
 
 ## List of projects
 
-- [Labyrinth Course Navigation](https://github.com/busycaesar/Labyrinth_Course_Navigation/tree/Master/Labyrinth%20course%20navigation)
-- [Multi-Sensor Autonomous Control](https://github.com/busycaesar/RobotC_Projects/tree/Master/Multi-Sensor%20autonomous%20control)
+- [Labyrinth Course Navigation](https://github.com/busycaesar/RobotC_Projects/tree/Master/Labyrinth%20course%20navigation)
+- [Multi-Sensor Path Detection](https://github.com/busycaesar/RobotC_Projects/tree/Master/Multi-Sensor%20path%20detection)
+- [Autonomous Course Navigation](https://github.com/busycaesar/RobotC_Projects/tree/Master/Autonomous%20course%20navigation)
 
 ## Author
 
