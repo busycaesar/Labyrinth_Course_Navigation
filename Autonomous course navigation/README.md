@@ -6,7 +6,12 @@ This project features RobotC code designed to enable a robot to autonomously nav
 
 ## Video Explanation
 
+[![Watch the video](https://img.youtube.com/vi/T_HOH0J34k4/0.jpg)](https://www.youtube.com/watch?v=T_HOH0J34k4)
+
 ## How it looks?
+
+![image](https://github.com/busycaesar/RobotC_Projects/assets/97539345/d8f8761e-0fa1-46c8-a546-f92c752a13a1)
+
 ## Features
 
 - Autonomous Navigation
