@@ -5,7 +5,11 @@ This project contains RobotC code that enables a robot to autonomously follow a 
 
 ## Video Explanation
 
+[![Watch the video](https://img.youtube.com/vi/4AnnwgHf8pI/0.jpg)](https://www.youtube.com/watch?v=4AnnwgHf8pI)
+
 ## How it looks?
+
+![Path](https://github.com/busycaesar/RobotC_Projects/assets/97539345/74469f5e-a5f4-4ec1-a570-0886b304a97b)
 
 ## Features
 
